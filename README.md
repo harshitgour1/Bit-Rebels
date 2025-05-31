@@ -46,6 +46,8 @@ Workflows
 
 *Technologies:* MediaPipe, Google TTS/pyttsx3, FastAPI
 
+![image](https://github.com/user-attachments/assets/239172ab-ef65-477d-8abb-7fe866ab5c08)
+
 ---
 
 ### 💬 *TalkBuddy* – Text-to-Speech Assistant
@@ -135,3 +137,6 @@ git clone https://github.com/your-username/sahaayAI.git
 cd sahaayAI
 ```
 ## Demo On Drive
+
+📂 **Full Demo Files & Screenshots:**  
+[View on Google Drive](https://drive.google.com/drive/folders/1K3GQ0AmmxLmvteqeVRBhrgTEN9dl1u3m?usp=sharing)
