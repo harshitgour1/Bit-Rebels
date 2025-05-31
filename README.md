@@ -133,8 +133,25 @@ No more exclusion. Just accessible, adaptive, human-centered AI.
 ### 📁 Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/sahaayAI.git
-cd sahaayAI
+git clone https://github.com/harshitgour1/Bit-Rebels.git
+cd impact-hackathon 
+
+Get the backend code from the drive and copy that folder in impact-hacthon
+
+after that:
+Run the Frontend by npm run dev
+
+For the Backend:
+cd backend
+
+python -m venv venv       
+>> .\venv\Scripts\Activate.ps1
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+pip install fastapi uvicorn[standard] transformers torch pillow pyttsx3 python-multipart
+after this run this python main.py
+
+
+
 ```
 ## Demo On Drive
 
