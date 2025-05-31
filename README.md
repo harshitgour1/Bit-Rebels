@@ -32,7 +32,8 @@ AI-Powered Visual Understanding
 Context-aware DLIT assistant to help users navigate spaces based on their unique needs
 
 ---
-![WhatsApp Image 2025-05-31 at 15 08 59_e8d887b5](https://github.com/user-attachments/assets/be916d8f-a8cc-4983-837e-08deaf5ae01b)
+!![image](https://github.com/user-attachments/assets/8241082d-59d0-4103-925e-150e7dfcd2fe)
+
 Workflows
 
 ## Feature Workflow
