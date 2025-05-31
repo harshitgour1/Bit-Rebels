@@ -1,5 +1,5 @@
 # 🤖 SahaayAI – A Friend That Speaks, Sees, and Signs
-## Github repo : https://github.com/harshitgour1/Saahay-Ai-Bit-Rebels-.git
+## Github repo : (https://github.com/harshitgour1/Bit-Rebels.git)
 # Drive link : https://drive.google.com/drive/folders/1K3GQ0AmmxLmvteqeVRBhrgTEN9dl1u3m?usp=sharing
 
 SahaayAI (from Sanskrit "Sahāya" meaning 'companion' or 'helper') is an AI-powered accessibility assistant built to empower individuals who are Deaf, Hard of Hearing, Visually Impaired, or Speech-Impaired. It brings together cutting-edge language models, computer vision, and assistive technologies into one inclusive experience.
