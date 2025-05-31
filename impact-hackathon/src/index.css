@@ -1,0 +1,145 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 250 250 251;
+    --foreground: 15 23 42;
+
+    --card: 255 255 255;
+    --card-foreground: 15 23 42;
+
+    --popover: 255 255 255;
+    --popover-foreground: 15 23 42;
+
+    --primary: 30 58 138;
+    --primary-foreground: 248 250 252;
+
+    --secondary: 241 245 249;
+    --secondary-foreground: 51 65 85;
+
+    --muted: 248 250 252;
+    --muted-foreground: 100 116 139;
+
+    --accent: 241 245 249;
+    --accent-foreground: 51 65 85;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 248 250 252;
+
+    --border: 226 232 240;
+    --input: 226 232 240;
+    --ring: 59 130 246;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 255 255 255;
+    --sidebar-foreground: 51 65 85;
+    --sidebar-primary: 30 58 138;
+    --sidebar-primary-foreground: 248 250 252;
+    --sidebar-accent: 241 245 249;
+    --sidebar-accent-foreground: 51 65 85;
+    --sidebar-border: 226 232 240;
+    --sidebar-ring: 59 130 246;
+  }
+
+  .dark {
+    --background: 15 23 42;
+    --foreground: 248 250 252;
+
+    --card: 30 41 59;
+    --card-foreground: 248 250 252;
+
+    --popover: 30 41 59;
+    --popover-foreground: 248 250 252;
+
+    --primary: 59 130 246;
+    --primary-foreground: 15 23 42;
+
+    --secondary: 51 65 85;
+    --secondary-foreground: 248 250 252;
+
+    --muted: 51 65 85;
+    --muted-foreground: 148 163 184;
+
+    --accent: 51 65 85;
+    --accent-foreground: 248 250 252;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 248 250 252;
+
+    --border: 51 65 85;
+    --input: 51 65 85;
+    --ring: 59 130 246;
+
+    --sidebar-background: 30 41 59;
+    --sidebar-foreground: 248 250 252;
+    --sidebar-primary: 59 130 246;
+    --sidebar-primary-foreground: 15 23 42;
+    --sidebar-accent: 51 65 85;
+    --sidebar-accent-foreground: 248 250 252;
+    --sidebar-border: 51 65 85;
+    --sidebar-ring: 59 130 246;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(15, 23, 42, 0.15) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+
+  /* Glassmorphism utilities */
+  .glass {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  /* High contrast focus styles for accessibility */
+  .focus-visible {
+    @apply outline-2 outline-offset-2 outline-accessible-blue;
+  }
+
+  /* Screen reader only text */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
+
+/* Ensure good contrast for interactive elements */
+@layer components {
+  .btn-primary {
+    @apply bg-accessible-blue hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-200;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-accessible-gray-50 text-accessible-gray-900 border-2 border-accessible-gray-300 font-semibold py-3 px-6 rounded-xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-accessible-gray-200;
+  }
+
+  .feature-card {
+    @apply glass rounded-2xl p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer;
+  }
+}
